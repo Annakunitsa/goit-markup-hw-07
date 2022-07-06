@@ -12,12 +12,6 @@
   letter-spacing: 0.02em;
 }
 
-.phone-number-link:hover,
-.phone-number-link:focus {
-  color: var(--accent-color);
-  fill: var(--accent-color);
-}
-
 .email-link {
   margin-right: 50px;
   display: flex;
@@ -25,31 +19,22 @@
   width: 100%;
 }
 
-.email-icon {
-  margin-right: 10px;
-}
-
-.phone-number-link {
-  display: flex;
-  align-items: center;
-}
-
+.email-icon,
 .phone-icon {
   margin-right: 10px;
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 
-.email-icon:hover,
-.email-icon:focus {
-  fill: var(--accent-color);
-}
-
-.phone-icon:hover,
-.phone-icon:focus {
-  fill: var(--accent-color);
-}
-
-.email-link:hover,
-.email-link:focus {
-  color: var(--accent-color);
-  fill: var(--accent-color);
+.phone-number-link,
+.email-link {
+  display: flex;
+  align-items: center;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+  }
 }

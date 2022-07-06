@@ -14,10 +14,9 @@
   margin-left: 30px;
   width: 170px;
   height: 92px;
-}
-
-.clients__item:first-child {
-  margin-left: 0;
+  &:first-child {
+    margin-left: 0;
+  }
 }
 
 .clients__link {
@@ -31,14 +30,13 @@
   height: 100%;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.clients__link:hover,
-.clients__link:focus {
-  color: var(--accent-color);
-  border: 1px solid;
-  border-color: currentColor;
-  border-radius: 4px;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border: 1px solid;
+    border-color: currentColor;
+    border-radius: 4px;
+  }
 }
 
 .clients__icon {
