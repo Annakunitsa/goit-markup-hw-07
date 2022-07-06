@@ -773,14 +773,13 @@ body {
 }
 
 .portfolio-list {
-  flex-basis: calc(33.3333333333% - 30px);
-  margin-left: 30px;
+  gap: 30px;
   margin-bottom: 30px;
   width: 370px;
   outline: 1px solid #eeeeee;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-list:hover {
+.portfolio-list:hover .portfolio-description {
   top: 0;
   left: 0;
   transform: translateY(0);
